@@ -1,0 +1,31 @@
+{
+  "env": {
+    "node": true,
+    "jest/globals": true
+  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "jest"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  },
+  "extends": [
+    "plugin:@shopify/esnext"
+  ],
+  "rules": {
+    "no-process-env": "off",
+    "no-console": "off"
+  }
+}
