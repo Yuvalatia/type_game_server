@@ -6,7 +6,7 @@ import {
 
 const router: Router = Router();
 
-router.get('/', (req: Request, res: Response) => {
+router.get('/dd', (req: Request, res: Response) => {
   res.send('Users');
 });
 

@@ -8,7 +8,8 @@
   "plugins": [
     "@typescript-eslint",
     "jest",
-    "promise"
+    "promise",
+    "import"
   ],
   "settings": {
     "import/resolver": {
@@ -23,9 +24,11 @@
     }
   },
   "extends": [
-    "plugin:@shopify/esnext",
-    "plugin:promise/recommended"
+    "airbnb-typescript/base"
   ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "rules": {
     "no-process-env": "off",
     "no-console": "off"
